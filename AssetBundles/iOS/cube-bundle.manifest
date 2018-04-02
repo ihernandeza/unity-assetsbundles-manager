@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1837646429
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a8373acd5907677dc759da1c8d31d92e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc89520d8bb187b7f2cde3adb4e1939e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleSample/SampleAssets/MyCube.prefab
+Dependencies:
+- C:/Users/Italo/Documents/GitHub/unity-assetsbundles-manager/AssetBundleManager/AssetBundles/iOS/material-bundle
