@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 379095451
+CRC: 2514660405
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 219b26566260fad9da87f81404f6b20c
+    Hash: 368b27cd10b429bb9674258a545c4e18
   TypeTreeHash:
     serializedVersion: 2
     Hash: 928c6f75761746fcc3c094ac4048b2ff
@@ -34,5 +34,5 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
-- Assets/AssetBundleSample/SampleAssets/Tanks/Variants/Language/Danish/Canvas.prefab
+- Assets/SampleAssets/Tanks/Variants/Language/Danish/Canvas.prefab
 Dependencies: []

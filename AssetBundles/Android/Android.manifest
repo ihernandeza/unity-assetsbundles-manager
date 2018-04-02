@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3060125023
+CRC: 3184777552
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -44,4 +44,7 @@ AssetBundleManifest:
         Dependency_0: material-bundle
     Info_12:
       Name: material-bundle
+      Dependencies: {}
+    Info_13:
+      Name: animal-bundle
       Dependencies: {}

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3239404759
+CRC: 4100216707
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2be33ab0038506915e632c21af0a1bc5
+    Hash: 053a9997327f1f751720e8c00a284fb2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1f201a7e2e0b91eed0d9b70a8f1a3833
@@ -18,7 +18,7 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/AssetBundleSample/SampleAssets/Variants/MyAssets-SD/myTexture.png
-- Assets/AssetBundleSample/SampleAssets/Variants/MyAssets-SD/someMaterial.mat
-- Assets/AssetBundleSample/SampleAssets/Variants/MyAssets-SD/unityLogo.png
+- Assets/SampleAssets/Variants/MyAssets-SD/myTexture.png
+- Assets/SampleAssets/Variants/MyAssets-SD/someMaterial.mat
+- Assets/SampleAssets/Variants/MyAssets-SD/unityLogo.png
 Dependencies: []

@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 264677479
+CRC: 1907093402
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8acdbd08bd9ed840672c4a5f81056f52
+    Hash: 50abfc596226f6de4aa90cf33f87067d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
 HashAppended: 0
 ClassTypes: []
 Assets:
-- Assets/AssetBundleSample/SampleAssets/TestScene.unity
+- Assets/SampleAssets/TestScene.unity
 Dependencies:
-- C:/Users/Italo/Documents/GitHub/unity-assetsbundles-manager/AssetBundleManager/AssetBundles/Android/material-bundle
+- C:/Users/Italo/Documents/GitHub/unity-assetsbundles-manager/AssetBundles/Android/material-bundle

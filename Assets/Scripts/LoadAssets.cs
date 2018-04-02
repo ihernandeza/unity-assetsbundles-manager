@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using AssetBundles;
 
 
@@ -8,14 +9,33 @@ public class LoadAssets : MonoBehaviour
 	public const string AssetBundlesOutputPath = "/AssetBundles/";
 	public string assetBundleName;
 	public string assetName;
+    public string[] assetNames;
 
-	// Use this for initialization
-	IEnumerator Start ()
+    /// <summary>
+    /// Aqui voy a guardar los bunldes descargados para su posterior referencia
+    /// </summary>
+    private List<GameObject> bundlesLoaded = new List<GameObject>();
+
+    // Use this for initialization
+    IEnumerator Start ()
 	{
 		yield return StartCoroutine(Initialize() );
-		
-		// Load asset.
-		yield return StartCoroutine(InstantiateGameObjectAsync (assetBundleName, assetName) );
+
+        // Load asset.
+        if (assetName != "")
+        {
+            yield return StartCoroutine(InstantiateGameObjectAsync(assetBundleName, assetName));
+        }
+
+        // Load multiple Assets if Exist
+        foreach (string asset in assetNames)
+        {
+            yield return StartCoroutine(InstantiateGameObjectAsync(assetBundleName, asset));
+        }
+
+        //Ya se cargaron Todos, enviar GamObjects al Manager y activar UI
+        //@AnimalAnimatorManager
+        SendMessage("Init", bundlesLoaded, SendMessageOptions.DontRequireReceiver);
 	}
 
 	// Initialize the downloading url and AssetBundleManifest object.
@@ -60,11 +80,18 @@ public class LoadAssets : MonoBehaviour
 		// Get the asset.
 		GameObject prefab = request.GetAsset<GameObject> ();
 
-		if (prefab != null)
-			GameObject.Instantiate(prefab);
-		
-		// Calculate and display the elapsed time.
-		float elapsedTime = Time.realtimeSinceStartup - startTime;
+        if (prefab != null)
+        {
+            GameObject currentAsset = Instantiate(prefab);
+
+            //Agregar al listado
+            bundlesLoaded.Add(currentAsset);
+        }
+
+
+
+        // Calculate and display the elapsed time.
+        float elapsedTime = Time.realtimeSinceStartup - startTime;
 		Debug.Log(assetName + (prefab == null ? " was not" : " was")+ " loaded successfully in " + elapsedTime + " seconds" );
 	}
 }

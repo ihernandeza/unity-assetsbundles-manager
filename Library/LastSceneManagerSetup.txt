@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/VariantLoader.unity
+- path: Assets/Scenes/AnimalsLoader.unity
   isLoaded: 1
   isActive: 1
