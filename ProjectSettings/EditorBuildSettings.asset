@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/AnimalsLoader.unity
+    guid: 0f5adf390f4bed545a6c239e6f2940a2
+  - enabled: 0
     path: Assets/Scenes/AssetLoader.unity
     guid: cd2b3f99825dd4345b6d8d163362e3e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneLoader.unity
     guid: d83e2e1d16985f948aa4a33acc2bd58d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TanksLoader.unity
     guid: 5862ae6b6aa1d74418c15df67b425df7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VariantLoader.unity
     guid: 3c2643e7e7088a54883273b772693259
