@@ -22,7 +22,7 @@ public class AnimalAnimatorManager : MonoBehaviour {
             bundle.transform.position = new Vector3(position, 0, 0);
             bundle.transform.rotation = Quaternion.Euler(0, randomRotation, 0);
 
-            position += 5;
+            position += 3;
         }
     }
 
